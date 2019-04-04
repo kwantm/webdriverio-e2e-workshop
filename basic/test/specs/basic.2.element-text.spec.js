@@ -10,7 +10,7 @@ describe('The page I fetch', () => {
         browser.url('file://<YOUR-FULL-PATH-TO>/basic/src/basic-testing.html');
     });
 
-     /**
+    /**
      * Use a Chai expectation to test if the h1 element in the body of the html document matches
      * the given title 'A title in the body'
      * 
