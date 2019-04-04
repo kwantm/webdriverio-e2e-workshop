@@ -46,6 +46,8 @@ The following CSS selectors are used:
 * [NPM](https://docs.npmjs.com/cli/install)
 * [NodeJS](https://nodejs.org/en/download/)
 * [Chrome](https://www.google.com/chrome/)
+* [Chromium command line switches](https://peter.sh/experiments/chromium-command-line-switches/)
+* [Chromium capabilities](https://sites.google.com/a/chromium.org/chromedriver/capabilities) 
 * [Visual Source Code](https://code.visualstudio.com/download)
 * [Markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 * [Workshop code](https://github.com/kwantm/webdriverio-e2e-workshop)
