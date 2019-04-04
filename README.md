@@ -27,12 +27,12 @@ The following Browser/Element methods will be used:
 The following CSS selectors are used:
 * element (h1)
 * element,element (h1,body)
-* element element (div p)
+* element element (div p) or (div > p)
 * #id (#myId)
 * .class (.myclass)
 * [attribute=value] (id=read) 
 ### Advanced section
-In the advanced section you will learn how to create multi layered tests, Page Objects and the use of some more advanced CSS selectors. 
+In the advanced section you will learn how to create multi layered tests (suites), Page Objects and the use of some more advanced CSS selectors. 
 
 The following CSS selectors are used:
 * :first-of-type (p:first-of-type) Select the first P element in the parent
