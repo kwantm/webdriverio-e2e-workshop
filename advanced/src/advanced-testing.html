@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Webdriver IO - advanced testing</title>
+
+  <script type="module">
+    import { LitElement, html, css } from 'https://unpkg.com/lit-element@2.0.1?module';
+    import 'https://unpkg.com/@polymer/paper-button/paper-button.js?module';
+    import 'https://unpkg.com/@polymer/paper-badge/paper-badge.js?module';
+
+    let myCustomTemplate = (title) => html`${title}`;
+
+    class MyElement extends LitElement {
+      static get properties() {
+        return {
+          articles: { type: Array },
+          filter: { type: String }
+        }
+      }
+
+      constructor() {
+        super();
+        this.articles = [];
+        this.filter = 'all';
+      }
+
+      connectedCallback() {
+        super.connectedCallback();
+        this.articles = [
+          {
+            id: 1,
+            title: 'title 1',
+            read: false,
+            description: 'Description 1'
+          },
+          {
+            id: 2,
+            title: 'title 2',
+            read: false,
+            description: 'Description 2'
+          },
+          {
+            id: 3,
+            title: 'title 3',
+            read: true,
+            description: 'Description 3'
+          },
+          {
+            id: 4,
+            title: 'title 4',
+            read: false,
+            description: 'Description 4'
+          },
+          {
+            id: 5,
+            title: 'title 5',
+            read: true,
+            description: 'Description 5'
+          }
+        ];
+      }
+
+      _toggleReadStatus(event) {
+        this.articles[event.detail].read = !this.articles[event.detail].read;
+        this.requestUpdate();
+      }
+      render() {
+
+        const filteredArticles = this.articles.filter(article => {
+          if (this.filter === 'all') return true;
+          if (this.filter === 'read') return article.read;
+          if (this.filter === 'unread') return !article.read;
+        });
+
+        return html`
+            <h1 class="myclass">${myCustomTemplate('Hello World')}</h1>
+            <div><p id="myId">P in a DIV element</p></div>
+            <br>
+            <br>
+            <paper-button id="read" @click=${() => this.filter = 'read'}>read</paper-button>
+            <paper-badge for="read" label="${this.articles.filter((article) => article.read).length}"></paper-badge>
+            <paper-button id="unread" @click=${() => this.filter = 'unread'}>unread</paper-button>
+            <paper-badge for="unread" label="${this.articles.filter((article) => !article.read).length}"></paper-badge>
+            <paper-button @click=${() => this.filter = 'all'}>all</paper-button>           
+            <ul>
+                ${filteredArticles.map(article =>
+          html`<my-article 
+                           .title='${article.title}' 
+                           .description='${article.description}'
+                           .id='${article.id}'
+                           .read='${article.read}'
+                           @toggled=${this._toggleReadStatus}>
+                       </my-article>`)}
+            </ul>  
+        `;
+      }
+    }
+
+    class MyArticle extends LitElement {
+
+      static get properties() {
+        return {
+          title: { type: String },
+          description: { type: String },
+          id: { type: Number },
+          read: { type: Boolean }
+        }
+      }
+
+      static get styles() {
+        return css`
+          h5 {
+            font-size: 20px;
+            color: red;
+          }
+          p {
+            font-size: 12px;
+            color: grey;
+          }
+
+        
+        `
+      };
+      _fireEvent() {
+        this.dispatchEvent(new CustomEvent('toggled', { detail: this.id }));
+      }
+
+      render() {
+        return html`<li>
+          <h5>${this.title}</h5>
+          <p>${this.description}</p>
+          <paper-button @click=${this._fireEvent}>${this.read ? html`read` : html`unread`}</paper-button>
+        </li>`;
+      }
+
+    }
+
+    customElements.define('my-article', MyArticle);
+    customElements.define('my-element', MyElement);
+  </script>
+</head>
+
+<body>
+  <h1 class="myClass">A title in the body</h1>
+  <a href="https://docs.npmjs.com/cli/install" target="_self">NPM</a>
+  <a href="https://nodejs.org/en/download/" target="_blank">nodejs</a>
+  <a href="https://www.chaijs.com/" target="_blank">chaijs</a>
+  <div>
+    <a href="https://lit-element.polymer-project.org/">Lit Element</a>
+  </div>
+  <my-element id="myCustomElement"></my-element>
+</body>
+
+</html>

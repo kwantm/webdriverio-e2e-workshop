@@ -55,7 +55,6 @@ exports.config = {
         //
         browserName: 'chrome',
         chromeOptions: {
-            args: ['--headless', '--disable-gpu', '--window-size=1280,800'],
             binary: '/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
         },
         platform: 'macOS 10.14',
@@ -72,7 +71,7 @@ exports.config = {
     // Define all options that are relevant for the WebdriverIO instance here
     //
     // Level of logging verbosity: trace | debug | info | warn | error | silent
-    logLevel: 'trace',
+    logLevel: 'warn',
     //
     // Set specific log levels per logger
     // loggers:
