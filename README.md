@@ -41,6 +41,10 @@ The following CSS selectors are used:
 * :invalid / :valid (input:invalid) Select all input elements that are invalid
 * :in-range (input:in-range) Select all input elements that have a value that is within a specific range
 
+## Generating the changelog
+You can generate the changelog by running the cmd: `./node_modules/.bin/auto-changelog -p`
+See for more information the site (link in the reference section available)
+
 ## Reference material
 
 * [NPM](https://docs.npmjs.com/cli/install)
@@ -59,3 +63,4 @@ The following CSS selectors are used:
 * [Webdriver Offical protocol](https://w3c.github.io/webdriver/#dfn-status)
 * [Webdriver commands](https://webdriver.io/docs/api/webdriver.html)
 * [Chai assert framework](https://www.chaijs.com/)
+* [Auto generated changelog](https://www.npmjs.com/package/auto-changelog)

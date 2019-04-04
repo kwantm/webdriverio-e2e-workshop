@@ -17,8 +17,7 @@
     "wdio-chromedriver-service": "^5.0.1"
   },
   "scripts": {
-    "test": "./node_modules/.bin/wdio ./basic/wdio.conf.js",
-    "version": "./node_modules/.bin/auto-changelog -p && git add CHANGELOG.md"
+    "test": "./node_modules/.bin/wdio ./basic/wdio.conf.js"
   },
   "keywords": [
     "Webdriver",
