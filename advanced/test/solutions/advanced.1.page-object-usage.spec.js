@@ -7,12 +7,9 @@ describe('The page I fetch', () => {
      * The test should only show cmdline output and no browser window if the settings in the wdio.conf.js in de advanced/src folder
      * are set correctly.
      * 
-     * In the capabilities array add:
-      
-       chromeOptions: {
-           args: ['--headless', '--disable-gpu', '--window-size=1280,800'],
-           binary: '/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
-       }
+     * In the capabilities array add in the chromeOptions:
+        
+        args: ['--headless', '--disable-gpu', '--window-size=1280,800']
 
      */
 
