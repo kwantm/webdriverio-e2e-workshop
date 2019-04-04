@@ -14,6 +14,7 @@ describe('The page I fetch', () => {
      * Tip: The options should be passed as arguments to Chrome in your wdio.conf.js
      *      (chrome argument options: https://peter.sh/experiments/chromium-command-line-switches/)
      * 
+     * run cmd: ./node_modules/.bin/wdio ./advanced/wdio.conf.js --spec ./advanced/test/specs/advanced.1.headless-browser.spec.js
      */
 
     it('Should have the right title and the test should run headless (not showing a browser window', () => {

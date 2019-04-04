@@ -15,6 +15,8 @@ const expect = chai.expect;
  * const SimplePage = require('./pageobjects/simple.page');
  * const page = new SimplePage();
  * 
+ * run cmd: ./node_modules/.bin/wdio ./advanced/wdio.conf.js --spec ./advanced/test/specs/advanced.2.using-page-object.spec.js
+ * 
  */
 describe('The page I fetch', () => {
 

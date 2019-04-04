@@ -1,7 +1,7 @@
 {
   "name": "webdriverio-e2e-workshop",
   "version": "1.0.0",
-  "description": "Small workshop for using webdriverio in combination with e2e testing of LIT HTML and/or Polymer components",
+  "description": "Small workshop for using webdriver.io, chai in combination with e2e testing of LIT HTML and/or Polymer components",
   "homepage": "https://github.com/kwantm/webdriverio-e2e-workshop",
   "dependencies": {
     "webdriverio": "^5.7.8"
