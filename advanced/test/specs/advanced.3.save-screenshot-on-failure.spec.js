@@ -21,6 +21,7 @@ describe('The page I fetch', () => {
     });
 
     it('Should have the right title', () => {
+        // this expectation will fail
         expect(page.title()).to.equal('Webdriver IO - advanced testingg');
     });
 
