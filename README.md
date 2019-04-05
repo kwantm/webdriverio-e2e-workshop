@@ -42,7 +42,7 @@ The following CSS selectors are used:
 * :in-range (input:in-range) Select all input elements that have a value that is within a specific range
 
 ## Generating the changelog
-You can generate the changelog by running the cmd: `./node_modules/.bin/auto-changelog -p`
+You can generate the changelog by running the cmd: `./node_modules/.bin/auto-changelog -p -b 100`
 See for more information the site (link in the reference section available)
 
 ## Reference material
