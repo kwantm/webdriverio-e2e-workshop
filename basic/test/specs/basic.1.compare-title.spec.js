@@ -20,7 +20,7 @@ describe('The page I fetch', () => {
      *   Find out how to create a chai expectation to compare the titles
      *      (chai commands: https://www.chaijs.com/api/bdd/)
      * 
-     * run cmd: ./node_modules/.bin/wdio ./advanced/wdio.conf.js --spec ./basic/test/specs/basic.1.compare-title.spec.js
+     * run cmd: ./node_modules/.bin/wdio ./basic/wdio.conf.js --spec ./basic/test/specs/basic.1.compare-title.spec.js
      */
     it('Should have the title: Webdriver IO - basic testing', () => {
         done(new Error("replace this line with your expectation"));

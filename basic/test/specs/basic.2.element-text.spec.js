@@ -19,7 +19,7 @@ describe('The page I fetch', () => {
      *      (webdriver browser commands: https://webdriver.io/docs/api/webdriver.html)
      *   Find out how to create a chai expectation to compare the text of the h1 element
      *      (chai commands: https://www.chaijs.com/api/bdd/)
-     * run cmd: ./node_modules/.bin/wdio ./advanced/wdio.conf.js --spec ./basic/test/specs/basic.2.element-text.spec.js
+     * run cmd: ./node_modules/.bin/wdio ./basic/wdio.conf.js --spec ./basic/test/specs/basic.2.element-text.spec.js
      *
      */
     it('Should have the h1 element in the body element with the text: A title in the body', () => {

@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "Small workshop for using webdriver.io, chai in combination with e2e testing of LIT HTML and/or Polymer components",
   "homepage": "https://github.com/kwantm/webdriverio-e2e-workshop",
+  "bugs": "https://github.com/kwantm/webdriverio-e2e-workshop/issues",
+  "repository": "github:kwantm/webdriverio-e2e-workshop",
   "dependencies": {
     "webdriverio": "^5.7.8"
   },
@@ -20,13 +22,14 @@
     "test": "./node_modules/.bin/wdio ./basic/wdio.conf.js"
   },
   "keywords": [
-    "Webdriver",
+    "Webdriverio",
     "chrome",
     "e2e",
     "testing",
     "Chai",
     "LitHTML",
-    "webcomponents"
+    "webcomponents",
+    "mocha"
   ],
   "author": "Marc de Kwant",
   "email": "m.de.kwant@gmail.com",

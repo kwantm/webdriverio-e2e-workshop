@@ -7,7 +7,7 @@ describe('The page I fetch', () => {
      *  Change the url to reflect your full path to the basic-testing.html file
      * 
      *      
-     * run cmd: ./node_modules/.bin/wdio ./advanced/wdio.conf.js --spec ./basic/test/specs/basic.3.selecting-elements.spec.js
+     * run cmd: ./node_modules/.bin/wdio ./basic/wdio.conf.js --spec ./basic/test/specs/basic.3.selecting-elements.spec.js
      *
      */
     beforeEach(() => {

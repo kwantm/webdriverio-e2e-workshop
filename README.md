@@ -32,7 +32,7 @@ The following CSS selectors are used:
 * .class (.myclass)
 * [attribute=value] (id=read) 
 ### Advanced section
-In the advanced section you will learn how to create multi layered tests (suites), Page Objects and the use of some more advanced CSS selectors. 
+In the advanced section you will learn how to create multi layered tests (suites), Page Objects, the use of some more advanced CSS selectors and obtaining elements from within the shadowroot. 
 
 The following CSS selectors are used:
 * :first-of-type (p:first-of-type) Select the first P element in the parent
