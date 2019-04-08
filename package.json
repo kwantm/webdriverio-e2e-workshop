@@ -21,7 +21,8 @@
   },
   "scripts": {
     "basic": "./node_modules/.bin/wdio ./basic/wdio.conf.js",
-    "advanced": "./node_modules/.bin/wdio ./advanced/wdio.conf.js"
+    "advanced": "./node_modules/.bin/wdio ./advanced/wdio.conf.js",
+    "changelog": "./node_modules/.bin/auto-changelog -p -b 1000"
   },
   "keywords": [
     "Webdriverio",
