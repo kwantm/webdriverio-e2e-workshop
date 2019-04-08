@@ -20,6 +20,8 @@ const expect = chai.expect;
  */
 describe('The page I fetch', () => {
 
+    const absPath = path.resolve('../webdriverio-e2e-workshop/advanced/src/advanced-testing.html');
+
     beforeEach(() => {
         page.open();
     });

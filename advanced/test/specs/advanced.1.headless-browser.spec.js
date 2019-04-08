@@ -1,10 +1,13 @@
 const chai = require('chai');
 const expect = chai.expect;
- 
+const path = require('path');
+
 describe('The page I fetch', () => {
 
+    const absPath = path.resolve('../webdriverio-e2e-workshop/advanced/src/advanced-testing.html');
+
     beforeEach(() => {
-        browser.url('file:///Users/marcdekwant/Documents/customers/workspaces/ING/webdriverio-e2e-workshop/advanced/src/advanced-testing.html');
+        browser.url('file://' + absPath);
     });
 
     /**

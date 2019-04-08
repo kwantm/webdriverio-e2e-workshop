@@ -1,5 +1,6 @@
 const chai = require('chai');
 const expect = chai.expect;
+const path = require('path');
 
 /**
  * Create a html file with some input fields and test the following selectors
@@ -13,8 +14,10 @@ const expect = chai.expect;
 
 describe('The page I fetch', () => {
 
+    const absPath = path.resolve('../webdriverio-e2e-workshop/advanced/src/<URL TO YOUR INPUT HTML>');
+
     beforeEach(() => {
-        browser.url('<URL TO YOUR INPUT HTML>');
+        browser.url('file://' + absPath);
     });
 
     it('Should have one input element that is optional', () => {

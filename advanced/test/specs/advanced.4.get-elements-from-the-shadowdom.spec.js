@@ -2,9 +2,12 @@ const chai = require('chai');
 const expect = chai.expect;
 const SimplePage = require('./pageobjects/simple.page');
 const page = new SimplePage();
+const path = require('path');
 
 
 describe('The page I fetch', () => {
+
+    const absPath = path.resolve('../webdriverio-e2e-workshop/advanced/src/advanced-testing.html');
 
     beforeEach(() => {
         page.open();

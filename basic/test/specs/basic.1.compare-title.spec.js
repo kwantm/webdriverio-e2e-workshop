@@ -1,13 +1,16 @@
 const chai = require('chai');
 const expect = chai.expect;
- 
+const path = require('path');
+
 describe('The page I fetch', () => {
+
+    const absPath = path.resolve('../webdriverio-e2e-workshop/basic/src/basic-testing.html');
 
     /**
      *  Change the url to reflect your full path to the basic-testing.html file
      */
     beforeEach(() => {
-        browser.url('file://<YOUR-FULL-PATH-TO>/basic/src/basic-testing.html');
+        browser.url('file://' + absPath);
     });
 
     /**

@@ -40,6 +40,9 @@ The following CSS selectors are used:
 * :optional (input:optional) Select all input elements that are do not have the required attribute
 * :invalid / :valid (input:invalid) Select all input elements that are invalid
 * :in-range (input:in-range) Select all input elements that have a value that is within a specific range
+## Run the tests
+* npm run basic
+* npm run advances
 
 ## Generating the changelog
 You can generate the changelog by running the cmd: `./node_modules/.bin/auto-changelog -p -b 100`

@@ -1,10 +1,12 @@
 const chai = require('chai');
 const expect = chai.expect;
- 
+const SimplePage = require('./pageobjects/simple.page');
+const page = new SimplePage();
+
 describe('The page I fetch', () => {
 
     beforeEach(() => {
-        browser.url('file:///Users/marcdekwant/Documents/customers/workspaces/ING/webdriverio-e2e-workshop/advanced/src/advanced-testing.html');
+        page.open();
     });
 
     it('Should have found 5 articles', () => {

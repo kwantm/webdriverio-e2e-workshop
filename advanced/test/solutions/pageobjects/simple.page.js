@@ -1,9 +1,10 @@
 const Page = require('./page');
+const path = require('path');
 
 class SimplePage extends Page {
-
+ 
     open() {
-        super.open('file:///Users/marcdekwant/Documents/customers/workspaces/ING/webdriverio-e2e-workshop/advanced/src/advanced-testing.html')
+         super.open('file://' + path.resolve('../webdriverio-e2e-workshop/advanced/src/advanced-testing.html'))
     }
     
 }
