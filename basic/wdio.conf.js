@@ -56,6 +56,11 @@ exports.config = {
         browserName: 'chrome',
         platform: 'macOS 10.14',
         version: '73.0'
+        // optional windows definition for chrome capabilities
+        // chromeOptions: {
+        //    binary: 'C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe'
+        // },
+        // platform: 'windows 7',
         // If outputDir is provided WebdriverIO can capture driver session logs
         // it is possible to configure which logTypes to include/exclude.
         // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
